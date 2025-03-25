@@ -1,0 +1,44 @@
+import React from 'react';
+import { Button } from '@/components/ui/button';
+
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-r from-indigo-100 to-purple-100 font-sans">
+      <nav className="flex justify-between items-center py-5 px-10 bg-white shadow-sm">
+        <h1 className="text-2xl font-bold text-indigo-600">SkillUp</h1>
+        <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">Get Started</Button>
+      </nav>
+      <main className="text-center py-20 px-5">
+        <h2 className="text-4xl md:text-5xl font-bold mb-5 text-gray-800">
+          Boost Your Career with Essential Soft Skills
+        </h2>
+        <p className="text-lg md:text-xl mb-10 text-gray-600 max-w-2xl mx-auto">
+          Coaching and online resources designed specifically for young professionals navigating their career progression after their first job.
+        </p>
+        <Button className="bg-purple-600 hover:bg-purple-700 text-white text-lg px-8 py-3">
+          Join Now
+        </Button>
+      </main>
+      <section className="py-16 px-5 bg-white">
+        <h3 className="text-3xl font-semibold text-gray-800 mb-10">What We Offer</h3>
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="shadow-lg rounded-xl p-6 bg-purple-50">
+            <h4 className="font-semibold text-xl mb-3">Personal Coaching</h4>
+            <p className="text-gray-600">1-on-1 sessions tailored to your career goals.</p>
+          </div>
+          <div className="shadow-lg rounded-xl p-6 bg-purple-50">
+            <h4 className="font-semibold text-xl mb-3">Skill Workshops</h4>
+            <p className="text-gray-600">Interactive online workshops focusing on key soft skills.</p>
+          </div>
+          <div className="shadow-lg rounded-xl p-6 bg-purple-50">
+            <h4 className="font-semibold text-xl mb-3">Resource Library</h4>
+            <p className="text-gray-600">Access to exclusive content, guides, and practical tips.</p>
+          </div>
+        </div>
+      </section>
+      <footer className="py-5 px-10 text-gray-500 text-sm bg-gray-50">
+        <p>&copy; {new Date().getFullYear()} SkillUp. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
